@@ -2,8 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'com.algo.app'
 
 repositories {
     mavenCentral()
@@ -16,4 +15,13 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Algorithm',
+                'Created-By' : "Sandeep Poomangalath",
+                'Main-Class': 'com.algo.app.App'
+    }
+    from {project.configurations.runtimeClasspath.collect {File file -> project.zipTree(file) } }
 }

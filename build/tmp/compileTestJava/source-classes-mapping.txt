@@ -1,0 +1,2 @@
+com/algo/app/AppTestSpec.java
+ com.algo.app.AppTestSpec

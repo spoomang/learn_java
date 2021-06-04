@@ -3,6 +3,11 @@ package com.algo.app.impl.bfs;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 public class BFSTestSpec {
 
     BFS bfs;
@@ -28,5 +33,11 @@ public class BFSTestSpec {
 
        bfs.setRoot(root);
        bfs.execute();
+
+       List<Vertex> result = bfs.getResult();
+
+       Vertex[] expectedResult = {root, B, C, D, E};
+
+       assertArrayEquals(expectedResult, result.toArray());
     }
 }

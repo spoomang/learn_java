@@ -17,5 +17,4 @@ public class AlgoFactory {
 
         return iAlgorithm;
     }
-
 }

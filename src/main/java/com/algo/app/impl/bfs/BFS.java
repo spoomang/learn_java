@@ -1,5 +1,6 @@
 package com.algo.app.impl.bfs;
 
+import com.algo.app.impl.node.Vertex;
 import com.algo.app.info.IAlgorithm;
 import lombok.Getter;
 import lombok.Setter;

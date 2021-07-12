@@ -1,4 +1,4 @@
-package com.algo.app.impl.bfs;
+package com.algo.app.impl.node;
 
 import lombok.Getter;
 import lombok.Setter;

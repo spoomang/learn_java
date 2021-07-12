@@ -1,5 +1,6 @@
 package com.algo.app.impl.bfs;
 
+import com.algo.app.impl.node.Vertex;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

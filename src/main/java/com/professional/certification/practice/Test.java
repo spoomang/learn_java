@@ -1,18 +1,22 @@
 package com.professional.certification.practice;
 
-class Printer<Double> {
-    private Double t;
-    Printer(Double t) {
-        this.t = t;
+
+class Outer {
+    private String name = "James Gosling";
+
+    class Inner {
+        public void printName() {
+            System.out.println(name);
+        }
     }
+
 }
 
 public class Test {
 
 
     public static void main(String[] args) {
-        Printer<Integer> i = new Printer<>(200);
 
-        System.out.println(i);
     }
 }
+

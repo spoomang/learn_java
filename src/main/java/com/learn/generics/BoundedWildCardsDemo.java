@@ -34,7 +34,14 @@ public class BoundedWildCardsDemo {
         list.add(30);
         go(list);
 
+
         int element = list.get(3);
+    }
+
+    static <T extends Number> void invarianceWorkAround(List<T> list) {
+        Double d = 2.5;
+
+        list.add((T) d);
     }
 
     static void go(List list) {

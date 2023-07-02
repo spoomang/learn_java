@@ -1,4 +1,4 @@
-package com.professional.certification.practice.thread;
+package com.professional.certification.practice.thread.test;
 
 
 import java.util.concurrent.BrokenBarrierException;

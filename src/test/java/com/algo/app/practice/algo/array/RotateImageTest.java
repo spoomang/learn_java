@@ -1,10 +1,11 @@
 package com.algo.app.practice.algo.array;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class RotateImageTest {
 
@@ -34,6 +35,7 @@ public class RotateImageTest {
         System.out.println(Arrays.deepToString(input));
 
         assertArrayEquals(expected, input);
+
     }
 
     @Test
